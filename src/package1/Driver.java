@@ -26,8 +26,6 @@ public class Driver {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		//create players
 		Player p1 = new Human(); p1.setSymbol('H'); p1.setName("Mike");
 		Player p2 = new TreeAI(); p2.setSymbol('C'); p2.setName("AI");
@@ -59,5 +57,4 @@ public class Driver {
 			System.out.println("Tie!");
 		}
 	}
-
 }

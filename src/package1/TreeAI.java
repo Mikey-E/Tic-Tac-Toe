@@ -17,13 +17,10 @@ public class TreeAI implements Player{
 
 	@Override
 	public boolean isAI() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
 	private Board[] getSuccessors(Board b, char c){
-//		if (b.countChar(Driver.emptySpace)==0){System.out.println("GS called with no open spaces");}//debug
-//		System.out.println("GS - original:");b.printBoard();//debug
 		int openSpaces = 0;
 		ArrayList<Integer> openIndexes = new ArrayList<Integer>();
 		for (int i = 1; i <= 9; i++){
@@ -33,11 +30,10 @@ public class TreeAI implements Player{
 			}
 		}
 		Board[] bArray = new Board[openSpaces];
-//		System.out.println("successors:");//debug
 		for (Integer j: openIndexes){
 			Board newB = new Board();
 			b.copyBoard(newB);
-			newB.setChar(c, j); //newB.printBoard();//debug
+			newB.setChar(c, j);
 			bArray[openSpaces-1] = newB;
 			openSpaces--;
 		}
@@ -115,7 +111,6 @@ public class TreeAI implements Player{
 		try {
 			Robot r1 = new Robot(); r1.delay(1000);
 		} catch (AWTException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		b.setChar(symbol, optimalSpot(b));
@@ -129,20 +124,16 @@ public class TreeAI implements Player{
 
 	@Override
 	public void setSymbol(char input) {
-		// TODO Auto-generated method stub
 		this.symbol = input;
 	}
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
 		return this.name;
 	}
 
 	@Override
 	public void setName(String input) {
-		// TODO Auto-generated method stub
 		this.name = input;
 	}
-
 }

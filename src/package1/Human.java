@@ -39,14 +39,11 @@ public class Human implements Player{
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
 		return this.name;
 	}
 
 	@Override
 	public void setName(String input) {
-		// TODO Auto-generated method stub
 		this.name = input;
 	}
-	
 }

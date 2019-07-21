@@ -16,7 +16,6 @@ public class RandomAI implements Player{
 
 	@Override
 	public boolean isAI() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
@@ -26,7 +25,6 @@ public class RandomAI implements Player{
 		try {
 			Robot r1 = new Robot(); r1.delay(1000);
 		} catch (AWTException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		int moveNum = 1+gen.nextInt(9);
@@ -44,20 +42,16 @@ public class RandomAI implements Player{
 
 	@Override
 	public void setSymbol(char input) {
-		// TODO Auto-generated method stub
 		this.symbol = input;
 	}
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
 		return this.name;
 	}
 
 	@Override
 	public void setName(String input) {
-		// TODO Auto-generated method stub
 		this.name = input;
 	}
-
 }
