@@ -27,7 +27,7 @@ public class Driver {
 
 	public static void main(String[] args) {
 		//create players
-		Player p1 = new Human(); p1.setSymbol('H'); p1.setName("Mike");
+		Player p1 = new Human(); p1.setSymbol('H'); p1.setName("Human");
 		Player p2 = new TreeAI(); p2.setSymbol('C'); p2.setName("AI");
 		
 		if ((p1.getSymbol()==emptySpace)||(p1.getSymbol()==tieChar)||
